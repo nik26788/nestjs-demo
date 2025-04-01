@@ -18,7 +18,7 @@ async function bootstrap() {
   app.enableCors();
 
   // 设置全局前缀
-  app.setGlobalPrefix('api');
+  // app.setGlobalPrefix('api');
 
   // 设置静态资源访问
   app.use('/static', servetatic(join(__dirname, '..', 'public')));
