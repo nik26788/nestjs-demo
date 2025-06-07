@@ -1,0 +1,49 @@
+GET http://api.nikdev.cn
+
+POST http://api.nikdev.cn/auth/signup
+content-type: application/json
+
+{
+    "username": "hello@nikdev.cn",
+    "password": "password01"
+}
+
+POST http://api.nikdev.cn/auth/login
+content-type: application/json
+
+{
+    "username": "hello@nikdev.cn",
+    "password": "password01"
+}
+
+GET http://api.nikdev.cn/post/findAll
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxvQG5pa2Rldi5jbiIsImlhdCI6MTc0OTI5MzY0NiwiZXhwIjoxNzQ5MzgwMDQ2fQ.uZQdyK7mOHRwN7hvEMoVSTNB3dTCDg_L4LEQZ6k92WI
+
+
+
+
+POST http://api.nikdev.cn/post/create
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxvQG5pa2Rldi5jbiIsImlhdCI6MTc0OTI5MzY0NiwiZXhwIjoxNzQ5MzgwMDQ2fQ.uZQdyK7mOHRwN7hvEMoVSTNB3dTCDg_L4LEQZ6k92WI
+
+{
+  "title": "Hello world",
+  "author": "nik",
+  "content": "I am nik",
+  "cover_url": "string"
+}
+
+GET http://api.nikdev.cn/post/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxvQG5pa2Rldi5jbiIsImlhdCI6MTc0OTI5MzY0NiwiZXhwIjoxNzQ5MzgwMDQ2fQ.uZQdyK7mOHRwN7hvEMoVSTNB3dTCDg_L4LEQZ6k92WI
+
+
+PUT http://api.nikdev.cn/post/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxvQG5pa2Rldi5jbiIsImlhdCI6MTc0OTI5MzY0NiwiZXhwIjoxNzQ5MzgwMDQ2fQ.uZQdyK7mOHRwN7hvEMoVSTNB3dTCDg_L4LEQZ6k92WI
+Content-type: application/json
+
+{
+    "title": "Hi, World"
+}
+
+DELETE http://api.nikdev.cn/post/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxvQG5pa2Rldi5jbiIsImlhdCI6MTc0OTI5MzY0NiwiZXhwIjoxNzQ5MzgwMDQ2fQ.uZQdyK7mOHRwN7hvEMoVSTNB3dTCDg_L4LEQZ6k92WI
